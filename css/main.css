@@ -1,0 +1,135 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url("https://img.clipartfest.com/da0e6070f30ad45c05f9627ec98304b3_movie-screen-clipart-1-movie-screen-clipart_788-538.jpeg");
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1 {
+    position: middle;
+    text-decoration: none;
+    font-family: "Arial Black", Gadget, sans-serif;
+    text-align: center;
+    margin-top: 100px;
+    color: red;
+}
+
+#container {
+    padding: 2em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(51, 60, 113, 0.60);
+    border-radius: 2%;
+}
+
+#container a {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    font-size: 2em;
+    text-decoration: none;
+    color: #f7f7f7;
+}
+
+#container a:visited {
+    color: #f7f7f7;
+}
+
+#container a:hover {
+    color: #f7f7f7;
+    font-size: 2.5em;
+}
+
+#container a:active {
+    color: #ffc129;
+}
+
+#output {
+    font-family: 'Righteous', cursive;
+    font-size: 2.5em;
+    color: #f7f7f7;
+}
+
+#output footer {
+    position: relative;
+    float: right;
+    line-height: 4em;
+    font-family: 'Economica', cursive;
+}
+@media only screen and (max-width: 850px) {
+    #container a {
+        font-size: 1em;
+    }
+    #output {
+        font-size: 1.5em;
+    }
+    #output footer {
+        font-size: 1em;
+    }
+}
+
+/*add hover effect to the New quote button, credit to http://codepen.io/deineko/pen/jrmmoQ */
+button {
+    color: #f7f7f7;
+    background: transparent;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #f7f7f7;
+    margin: 1em;
+    display: inline-block;
+    padding: 0.5em 1em;
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    position: absolute;
+    bottom: 8px;
+    left: 200px;
+}
+
+button:before,
+button:after {
+    content: '';
+    display: block;
+    position: absolute;
+    border-color: #f7f7f7;
+    box-sizing: border-box;
+    border-style: solid;
+    width: 1em;
+    height: 1em;
+    transition: all 0.3s ease-in-out
+}
+
+button:before {
+    top: -6px;
+    left: -6px;
+    border-width: 2px 0 0 2px;
+    z-index: 5;
+}
+
+button:after {
+    bottom: -6px;
+    right: -6px;
+    border-width: 0 2px 2px 0;
+}
+
+button:hover:before,
+button:hover:after {
+    width: calc(100% + 12px);
+    height: calc(100% + 12px);
+    border-color: #ffc129;
+}
+
+button:hover {
+    color: #f7f7f7;
+    background-color: #ffc129;
+    border-color: #ffc129
+}
